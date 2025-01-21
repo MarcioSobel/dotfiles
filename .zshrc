@@ -107,6 +107,9 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 alias zshconfig="vim ~/dotfiles/.zshrc"
 
+# run vscode on wayland
+alias code="code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto"
+
 eval "$(zoxide init --cmd cd zsh)"
 
 export NVM_DIR="$HOME/.nvm"
