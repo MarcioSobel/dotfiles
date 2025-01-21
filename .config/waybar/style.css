@@ -1,14 +1,22 @@
+@define-color bg #322727;
+@define-color weak-white #d7d7c8;
+@define-color white #ebebdf;
+@define-color orange #de8967;
+@define-color yellow #f7d195;
+@define-color transparent rgba(0, 0, 0, 0);
+
 window#waybar {
-  background-color: rgb(36, 39, 58)
+  font-family: 'Padauk';
+  background-color: @transparent;
 }
 
 .modules-left {
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: 10px;
+  margin-left: 20px;
 
   border-radius: 10px;
-  background-color: rgb(54, 58, 79);
+  background-color: @bg;
 }
 
 .modules-center {
@@ -16,79 +24,89 @@ window#waybar {
   margin-bottom: 5px;
 
   border-radius: 10px;
-  background-color: rgb(54, 58, 79);
+  background-color: @bg;
 }
 
 .modules-right {
   margin-top: 5px;
   margin-bottom: 5px;
+  margin-right: 20px;
 
   border-radius: 10px;
-  background-color: rgb(54, 58, 79);
+  background-color: @bg;
 
   padding-left: 10px;
 }
 
+.modules-right * {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
 #language,
 #clock {
-  color: rgb(202, 211, 245);
+  color: @weak-white;
 }
 
 #clock {
-  margin-right: 10px;
+  font-weight: bold;
+  margin-top: 1px;
+  margin-right: 14px;
 }
 
 #tray {
-  margin: 0px 6px;
+  margin: 0px 8px;
 }
 
 #tray menu {
   color: rgb(202, 211, 245);
-  background-color: rgb(54, 58, 79);
+  background-color: @bg;
   padding: 5px;
   border-radius: 10px;
 }
 
 #tray menu *:hover {
-  background-color: rgba(198, 160, 246, 1);
+  color: @white;
+  font-weight: bold;
+  background-color: @orange;
   border-radius: 10px;
 }
 
 #workspaces button {
-    all:unset;
+    all: unset;
     padding: 2px 8px;
-    color: alpha(rgb(202, 211, 245),.4);
+    color: @white;
     transition: all .2s ease;
 }
 
 #workspaces button:hover {
-    color:rgba(0,0,0,0);
+    color: @transparent;
     border: none;
-    text-shadow: 0px 0px 1.5px rgb(184, 192, 224);
+    text-shadow: 0px 0px 1.5px @weak-white;
     transition: all 0.5s ease;
 }
 
 #workspaces button.active {
-    color: rgb(202, 211, 245);
+    color: @white;
     border: none;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }
 
 #workspaces button.empty {
-    color: rgba(0,0,0,0);
+    color: rgba(0, 0, 0, 0);
     border: none;
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
 }
 
 #workspaces button.empty:hover {
-    color: rgba(0,0,0,0);
+    color: @transparent;
     border: none;
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
     transition: all 0.5s ease;
 }
 
 #workspaces button.empty.active {
-    color: rgb(202, 211, 245);
+    color: @weak-white;
     border: none;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }
