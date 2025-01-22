@@ -3,6 +3,8 @@
 @define-color white #ebebdf;
 @define-color orange #de8967;
 @define-color yellow #f7d195;
+@define-color blue #65848b;
+@define-color light-blue #85c0ed;
 @define-color transparent rgba(0, 0, 0, 0);
 
 window#waybar {
