@@ -102,4 +102,5 @@ window#waybar {
 
 #custom-notification {
   color: @white;
+  font-weight: bold;
 }
