@@ -1,0 +1,122 @@
+/* avoid annoying background */
+.blank-window {
+  background: transparent;
+}
+
+.control-center {
+  background-color: @bg;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.control-center-list-placeholder {
+  opacity: 0.2;
+}
+
+/* volume slider */
+trough highlight {
+  background: linear-gradient(to right, @orange, @orange, @orange, @yellow);
+  border-radius: 20px;
+}
+
+scale trough {
+  margin: 0rem 1rem;
+  background-color: @surface0;
+  min-height: 10px;
+  border-radius: 20px;
+}
+
+.widget-volume {
+  margin-top: 15px;
+  padding: 5px 15px 5px 10px;
+  border-radius: 8px;
+}
+
+.widget-volume .text-button {
+  padding-left: 7px;
+  padding-right: 9px;
+  padding-top: 1px;
+
+  border-radius: 7px;
+}
+
+.widget-volume .text-button:hover {
+  background-color: @surface0;
+}
+
+.per-app-volume>* {
+  padding-left: 10px;
+  padding-right: 0px;
+  padding-top: 10px;
+}
+
+/* title */
+.widget-title button {
+  background-color: @surface0;
+  padding: 2px 11px 2px 9px;
+  border-radius: 5px;
+}
+
+.widget-title button:hover {
+  background-color: @surface1;
+}
+
+.widget-title button:active {
+  background-color: @surface0;
+}
+
+/* dnd */
+.widget-dnd {
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.widget-dnd > switch {
+  background: @surface0;
+  box-shadow: none;
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.widget-dnd > switch image {
+  color: @transparent;
+}
+
+.widget-dnd > switch:checked {
+  background: linear-gradient(to right, @orange, @yellow);
+}
+
+.widget-dnd > switch slider {
+  background: @bg;
+  border-radius: 6.5px;
+  min-width: 24px;
+}
+
+/* mpris */
+.widget-mpris {
+  margin-top: 15px;
+  color: @white;
+  background: @surface0;
+  padding: 5px 10px 0px 10px;
+  margin: 5px 0px;
+  border-radius: 10px;
+}
+
+.widget-mpris>box {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.widget-mpris-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.widget-mpris-player {
+  margin-top: 5px;
+}
+
+.widget-mpris-player>*:last-child>*:hover {
+  background-color: @surface1;
+  border-radius: 5px;
+}
