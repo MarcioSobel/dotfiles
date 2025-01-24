@@ -5,7 +5,7 @@
 * {
   all: unset;
   font-size: 1.25rem;
-  font-family: 'Padauk';
+  font-family: 'URW Gothic';
   color: @white;
   transition: 200ms;
 }

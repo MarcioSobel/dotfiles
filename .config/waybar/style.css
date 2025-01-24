@@ -1,7 +1,7 @@
 @import url("../colors/clay.css");
 
 window#waybar {
-  font-family: 'Padauk';
+  font-family: 'Comfortaa';
   background-color: @transparent;
 }
 
