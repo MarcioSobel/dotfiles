@@ -27,13 +27,18 @@ window#waybar {
 }
 
 #language,
-#clock {
+#clock,
+#network {
   color: @weak-white;
 }
 
 #clock {
   font-weight: bold;
   margin-top: 1px;
+}
+
+#network.disconnected {
+  opacity: 0.5;
 }
 
 #tray {

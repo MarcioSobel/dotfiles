@@ -16,6 +16,7 @@
   "modules-right": [
     "hyprland/language",
     "clock#time",
+    "network",
     "custom/notification"
   ],
 }
