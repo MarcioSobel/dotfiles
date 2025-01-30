@@ -16,6 +16,7 @@
     "dnd",
     "volume",
     "notifications",
+    "buttons-grid",
     "mpris"
   ],
   "widget-config": {
@@ -37,6 +38,26 @@
     },
     "dnd": {
       "text": "Do not disturb"
+    },
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "",
+          "command": "echo wip"
+        },
+        {
+          "label": "󰗽",
+          "command": "hyprctl dispatch exit"
+        },
+        {
+          "label": "",
+          "command": "reboot"
+        },
+        {
+          "label": "",
+          "command": "poweroff"
+        }
+      ]
     }
   }
 }
