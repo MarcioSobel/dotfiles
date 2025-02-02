@@ -1,20 +1,20 @@
 local function my_on_attach(bufnr)
 	local api = require("nvim-tree.api")
-  
+
 	local function opts(desc)
 		return {
-			desc = "nvim-tree: " .. desc,
+			desc = desc,
 			buffer = bufnr,
 			noremap = true,
 			silent = true,
-			nowait = true
+			nowait = true,
 		}
 	end
 
-	vim.keymap.set('n', '<C-n>', api.tree.open, opts('Open or Focus File Explorer'))
-	vim.keymap.set('n', '<leader>e', api.tree.toggle, opts('Toggle File Explorer'))
+	vim.keymap.set("n", "<C-n>", api.tree.open, opts("Open or Focus File Explorer"))
+	vim.keymap.set("n", "<leader>e", api.tree.toggle, opts("Toggle File Explorer"))
 	api.config.mappings.default_on_attach(bufnr)
-  end
+end
 
 return {
 	{
@@ -25,16 +25,16 @@ return {
 		config = function()
 			local function opts(desc)
 				return {
-					desc = "nvim-tree: " .. desc,
+					desc = desc,
 					noremap = true,
 					silent = true,
-					nowait = true
+					nowait = true,
 				}
 			end
 
 			local api = require("nvim-tree.api")
-			vim.keymap.set('n', '<C-n>', api.tree.open, opts('Open or Focus File Explorer'))
-			vim.keymap.set('n', '<leader>e', api.tree.toggle, opts('Toggle File Explorer'))
+			vim.keymap.set("n", "<C-n>", api.tree.open, opts("Open or Focus File Explorer"))
+			vim.keymap.set("n", "<leader>e", api.tree.toggle, opts("Toggle File Explorer"))
 
 			local HEIGHT_RATIO = 0.7
 			local WIDTH_RATIO = 0.2
@@ -46,7 +46,7 @@ return {
 					always_show_folders = false,
 				},
 				filters = {
-					custom = { "^\\.git" }
+					custom = { "^\\.git" },
 				},
 				view = {
 					side = "left",
@@ -65,14 +65,14 @@ return {
 							local center_x = (screen_w - window_w) / 2
 							local center_y = ((vim.opt.lines:get() - window_h) / 2 - vim.opt.cmdheight:get())
 							return {
-								border = 'rounded',
-								relative = 'editor',
+								border = "rounded",
+								relative = "editor",
 								row = center_y,
 								col = center_x,
 								width = window_w_int,
 								height = window_h_int,
 							}
-						end
+						end,
 					},
 				},
 			})
