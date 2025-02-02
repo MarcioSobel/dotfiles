@@ -24,6 +24,7 @@ opt.scrolloff = 8
 
 opt.updatetime = 50
 opt.colorcolumn = { "80", "120" }
+opt.wrap = false
 
 -- go to previous/next line with h,l,left arrow and right arrow
 -- when cursor reaches end/beginning of line
