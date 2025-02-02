@@ -29,3 +29,7 @@ map("n", "<leader>gb", function()
 	require("gitsigns").blame_line({ full = true })
 end, { desc = "Git Blame line" })
 
+-- Bufferline mappings
+map("n", "<Tab>", "<cmd>BufferLineCycleNext<CR>", { desc = "Go to next tab" })
+map("n", "<S-Tab>", "<cmd>BufferLineCyclePrev<CR>", { desc = "Go to previous tab" })
+map("n", "<Leader>x", "<cmd>bdelete<CR>", { desc = "Close current tab" })
