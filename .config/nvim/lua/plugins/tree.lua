@@ -1,4 +1,4 @@
-local function my_on_attach(bufnr)
+local function on_attach(bufnr)
 	local api = require("nvim-tree.api")
 
 	local function opts(desc)
@@ -40,7 +40,7 @@ return {
 			local WIDTH_RATIO = 0.2
 
 			require("nvim-tree").setup({
-				on_attach = my_on_attach,
+				on_attach = on_attach,
 				live_filter = {
 					prefix = " ",
 					always_show_folders = false,
