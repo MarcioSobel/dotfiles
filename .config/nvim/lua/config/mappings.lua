@@ -1,5 +1,6 @@
 local map = vim.keymap.set
 
+-- disable accidentally quitting neovim :sob:
 map("n", "Q", "<nop>")
 
 -- center screen when scrolling
@@ -21,8 +22,27 @@ map("n", "<leader>y", '"+y', { desc = "Copy to system clipboard" })
 map("v", "<leader>y", '"+y', { desc = "Copy to system clipboard" })
 map("n", "<leader>Y", '"+Y', { desc = "Copy line to system clipboard" })
 
+-- comments
+map("n", "<leader>/", "gcc", { desc = "Toggle comment" })
+map("v", "<leader>/", "gc", { desc = "Toggle comment" })
+
+-- window navigation
+map("n", "<C-h>", "<C-w>h", { desc = "Switch window left" })
+map("n", "<C-l>", "<C-w>l", { desc = "Switch window right" })
+map("n", "<C-j>", "<C-w>j", { desc = "Switch window down" })
+map("n", "<C-k>", "<C-w>k", { desc = "Switch window up" })
+
+-- file manipulation
+map("n", "<C-s>", "<cmd>w<CR>", { desc = "Save buffer changes to file" })
+
 -- telescope mappings
-map("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "Telescope find files" })
+map("n", "<leader>gs", require("telescope.builtin").git_status, { desc = "Telescope git status" })
+map("n", "<leader>fb", require("telescope.builtin").buffers, { desc = "Telescope buffers" })
+map("n", "<leader>fd", require("telescope.builtin").diagnostics, { desc = "Telescope LSP diagnostics" })
+map("n", "<C-f>", require("telescope.builtin").current_buffer_fuzzy_find, { desc = "Telescope find in current buffer" })
+map("n", "<leader>ff", function()
+	require("telescope.builtin").find_files({ follow = true, hidden = true, no_ignore = true })
+end, { desc = "Telescope find files" })
 
 -- gitsigns mappings
 map("n", "<leader>gb", function()

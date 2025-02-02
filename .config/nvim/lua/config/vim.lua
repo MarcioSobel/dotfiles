@@ -9,6 +9,7 @@ o.cursorlineopt = "number"
 
 o.ignorecase = true
 o.smartcase = true
+
 o.mouse = "a"
 
 o.nu = true
@@ -31,7 +32,7 @@ opt.termguicolors = true
 -- when cursor reaches end/beginning of line
 opt.whichwrap:append("<>[]hl")
 
--- INDENTATION SETTINGS
+-- Indentation settings
 o.tabstop = 4
 o.softtabstop = 4
 o.shiftwidth = 4
