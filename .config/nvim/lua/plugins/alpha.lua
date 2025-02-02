@@ -44,7 +44,7 @@ return {
 
 				dashboard.section.buttons.val = {
 					dashboard.button("SPC n f", "  New file", "<cmd>ene <CR>"),
-					dashboard.button("SPC f f", "  Find file", '<cmd>echo "WIP" <CR>'),
+					dashboard.button("SPC f f", "  Find file"),
 					dashboard.button("SPC q q", "  Quit", "<cmd>qa<CR>"),
 				}
 
