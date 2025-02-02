@@ -23,3 +23,9 @@ map("n", "<leader>Y", '"+Y', { desc = "Copy line to system clipboard" })
 
 -- telescope mappings
 map("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "Telescope find files" })
+
+-- gitsigns mappings
+map("n", "<leader>gb", function()
+	require("gitsigns").blame_line({ full = true })
+end, { desc = "Git Blame line" })
+
