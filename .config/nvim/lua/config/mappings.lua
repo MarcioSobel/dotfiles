@@ -1,2 +1,25 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+local map = vim.keymap.set
+
+map("n", "Q", "<nop>")
+
+-- center screen when scrolling
+map("n", "<C-d>", "<C-d>zz")
+map("n", "<C-u>", "<C-u>zz")
+map("n", "n", "nzzzv")
+map("n", "N", "Nzzzv")
+
+-- use this to paste without overwritting
+-- your current paste buffer
+map("x", "<leader>p", '"_dP', { desc = "Paste without overwritting current buffer" })
+
+-- same but with delete
+map("n", "<leader>d", '"_d', { desc = "Delete without overwritting current buffer" })
+map("v", "<leader>d", '"_d', { desc = "Delete without overwritting current buffer" })
+
+-- copy to system clipboard
+map("n", "<leader>y", '"+y', { desc = "Copy to system clipboard" })
+map("v", "<leader>y", '"+y', { desc = "Copy to system clipboard" })
+map("n", "<leader>Y", '"+Y', { desc = "Copy line to system clipboard" })
+
+-- telescope mappings
+map("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "Telescope find files" })
