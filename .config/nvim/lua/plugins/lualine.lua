@@ -8,9 +8,8 @@ return {
 				lualine_a = { { "mode", separator = { right = "" } } },
 				lualine_b = {
 					{ "branch", icon = "", separator = { right = "" } },
-					"diagnostics",
 				},
-				lualine_c = { "filename" },
+				lualine_c = { "filename", { "diagnostics", separator = { left = "" } } },
 				lualine_x = {
 					function()
 						local clients = vim.lsp.get_active_clients()
