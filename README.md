@@ -49,11 +49,11 @@ And done! You should be able to log in Hyprland and start using this config. Fee
 
 | Keybind | Description |
 | :--- | :--- |
-| <kbd>Super</kbd> + <kbd>Q</kbd> | Open terminal (kitty) |
-| <kbd>Super</kbd> + <kbd>R</kbd> | Open Launcher |
-| <kbd>Super</kbd> + <kbd>E</kbd> | Open file explorer |
-| <kbd>Super</kbd> + <kbd>C</kbd> | Close window |
-| <kbd>Super</kbd> + <kbd>M</kbd> | Log out |
+| <kbd>Super</kbd> + <kbd>q</kbd> | Open terminal (kitty) |
+| <kbd>Super</kbd> + <kbd>r</kbd> | Open Launcher |
+| <kbd>Super</kbd> + <kbd>e</kbd> | Open file explorer |
+| <kbd>Super</kbd> + <kbd>c</kbd> | Close window |
+| <kbd>Super</kbd> + <kbd>m</kbd> | Log out |
 | <kbd>Super</kbd> + <kbd>🖰 LMB</kbd> | Move window |
 | <kbd>Super</kbd> + <kbd>🖰 RMB</kbd> | Resize window |
 | <kbd>Super</kbd> + <kbd>🖰 Scroll</kbd> | Change workspace |
@@ -61,9 +61,9 @@ And done! You should be able to log in Hyprland and start using this config. Fee
 | <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>[1-0]</kbd> | Move active window to workspace [1-10] |
 | <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>Esc</kbd> | Open btop |
 | <kbd>Prtscrn</kbd> | Select area to print and copy to clipboard |
-| <kbd>Super</kbd> + <kbd>V</kbd> | Toggle floating window |
-| <kbd>Super</kbd> + <kbd>P</kbd> | Toggle pseudo tiling |
-| <kbd>Super</kbd> + <kbd>J</kbd> | Toggle window arragement (vertical/horizontal) |
+| <kbd>Super</kbd> + <kbd>v</kbd> | Toggle floating window |
+| <kbd>Super</kbd> + <kbd>p</kbd> | Toggle pseudo tiling |
+| <kbd>Super</kbd> + <kbd>j</kbd> | Toggle window arragement (vertical/horizontal) |
 | <kbd>Super</kbd> + <kbd>⇥ Tab</kbd> | Change window focus |
 | <kbd>Super</kbd> + <kbd>←</kbd> | Focus left window |
 | <kbd>Super</kbd> + <kbd>→</kbd> | Focus right window |
@@ -73,10 +73,10 @@ And done! You should be able to log in Hyprland and start using this config. Fee
 | <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>→</kbd> | Move window right |
 | <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>↑</kbd> | Move window up |
 | <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>↓</kbd> | Move window down |
-| <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>H</kbd> | Move window left |
-| <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>L</kbd> | Move window right |
-| <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>K</kbd> | Move window up |
-| <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>J</kbd> | Move window down |
+| <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>h</kbd> | Move window left |
+| <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>l</kbd> | Move window right |
+| <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>k</kbd> | Move window up |
+| <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>j</kbd> | Move window down |
 </details>
 
 <details>
