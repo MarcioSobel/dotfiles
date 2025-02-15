@@ -32,10 +32,10 @@ noremap("n", "<leader>/", "gcc", { desc = "Toggle comment" })
 noremap("v", "<leader>/", "gc", { desc = "Toggle comment" })
 
 -- window navigation
-noremap("n", "<C-h>", "<C-w>h", { desc = "Switch window left" })
-noremap("n", "<C-l>", "<C-w>l", { desc = "Switch window right" })
-noremap("n", "<C-j>", "<C-w>j", { desc = "Switch window down" })
-noremap("n", "<C-k>", "<C-w>k", { desc = "Switch window up" })
+noremap("n", "<C-h>", "<cmd>TmuxNavigateLeft<CR>", { desc = "Switch window left" })
+noremap("n", "<C-l>", "<cmd>TmuxNavigateRight<CR>", { desc = "Switch window right" })
+noremap("n", "<C-j>", "<cmd>TmuxNavigateDown<CR>", { desc = "Switch window down" })
+noremap("n", "<C-k>", "<cmd>TmuxNavigateUp<CR>", { desc = "Switch window up" })
 noremap("n", "<leader>sph", "<C-w>s", { desc = "Split window horizontally —" })
 noremap("n", "<leader>spv", "<C-w>v", { desc = "Split window vertically |" })
 
