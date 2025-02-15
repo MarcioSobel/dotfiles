@@ -37,19 +37,23 @@ map("n", "<C-s>", "<cmd>w<CR>", { desc = "Save buffer changes to file" })
 
 -- telescope mappings
 map("n", "<leader>gs", require("telescope.builtin").git_status, { desc = "Telescope git status" })
+map("n", "<leader>gcb", require("telescope.builtin").git_branches, { desc = "Telescope git branches" })
 map("n", "<leader>fb", require("telescope.builtin").buffers, { desc = "Telescope buffers" })
 map("n", "<leader>fd", require("telescope.builtin").diagnostics, { desc = "Telescope LSP diagnostics" })
 map("n", "<C-f>", require("telescope.builtin").current_buffer_fuzzy_find, { desc = "Telescope find in current buffer" })
 map("n", "<leader>ff", function()
-	require("telescope.builtin").find_files({ follow = true, hidden = true, no_ignore = true })
+	require("telescope.builtin").find_files({ follow = true })
 end, { desc = "Telescope find files" })
+map("n", "<leader>fa", function()
+	require("telescope.builtin").find_files({ follow = true, hidden = true, no_ignore = true })
+end, { desc = "Telescope find all files" })
 
 -- gitsigns mappings
 map("n", "<leader>gb", function()
 	require("gitsigns").blame_line({ full = true })
 end, { desc = "Git Blame line" })
 
--- Bufferline mappings
+-- bufferline mappings
 map("n", "<Tab>", "<cmd>BufferLineCycleNext<CR>", { desc = "Go to next tab" })
 map("n", "<S-Tab>", "<cmd>BufferLineCyclePrev<CR>", { desc = "Go to previous tab" })
 map("n", "<Leader>x", "<cmd>bdelete<CR>", { desc = "Close current tab" })
