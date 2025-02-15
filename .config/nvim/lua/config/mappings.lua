@@ -1,21 +1,26 @@
 local map = vim.keymap.set
+local noremap = function(mode, lhs, rhs, opts)
+	opts = opts or {}
+	opts.noremap = true
+	map(mode, lhs, rhs, opts)
+end
 
 -- disable accidentally quitting neovim :sob:
-map("n", "Q", "<nop>")
+noremap("n", "Q", "<nop>", { noremap = true })
 
 -- center screen when scrolling
-map("n", "<C-d>", "<C-d>zz")
-map("n", "<C-u>", "<C-u>zz")
-map("n", "n", "nzzzv")
-map("n", "N", "Nzzzv")
+noremap("n", "<C-d>", "<C-d>zz")
+noremap("n", "<C-u>", "<C-u>zz")
+noremap("n", "n", "nzzzv")
+noremap("n", "N", "Nzzzv")
 
 -- use this to paste without overwritting
 -- your current paste buffer
-map("x", "<leader>p", '"_dP', { desc = "Paste without overwritting current buffer" })
+noremap("x", "<leader>p", '"_dP', { desc = "Paste without overwritting current buffer" })
 
 -- same but with delete
-map("n", "<leader>d", '"_d', { desc = "Delete without overwritting current buffer" })
-map("v", "<leader>d", '"_d', { desc = "Delete without overwritting current buffer" })
+noremap("n", "<leader>d", '"_d', { desc = "Delete without overwritting current buffer" })
+noremap("v", "<leader>d", '"_d', { desc = "Delete without overwritting current buffer" })
 
 -- copy to system clipboard
 map("n", "<leader>y", '"+y', { desc = "Copy to system clipboard" })
@@ -23,17 +28,17 @@ map("v", "<leader>y", '"+y', { desc = "Copy to system clipboard" })
 map("n", "<leader>Y", '"+Y', { desc = "Copy line to system clipboard" })
 
 -- comments
-map("n", "<leader>/", "gcc", { desc = "Toggle comment" })
-map("v", "<leader>/", "gc", { desc = "Toggle comment" })
+noremap("n", "<leader>/", "gcc", { desc = "Toggle comment" })
+noremap("v", "<leader>/", "gc", { desc = "Toggle comment" })
 
 -- window navigation
-map("n", "<C-h>", "<C-w>h", { desc = "Switch window left" })
-map("n", "<C-l>", "<C-w>l", { desc = "Switch window right" })
-map("n", "<C-j>", "<C-w>j", { desc = "Switch window down" })
-map("n", "<C-k>", "<C-w>k", { desc = "Switch window up" })
+noremap("n", "<C-h>", "<C-w>h", { desc = "Switch window left" })
+noremap("n", "<C-l>", "<C-w>l", { desc = "Switch window right" })
+noremap("n", "<C-j>", "<C-w>j", { desc = "Switch window down" })
+noremap("n", "<C-k>", "<C-w>k", { desc = "Switch window up" })
 
 -- file manipulation
-map("n", "<C-s>", "<cmd>w<CR>", { desc = "Save buffer changes to file" })
+noremap("n", "<C-s>", "<cmd>w<CR>", { desc = "Save buffer changes to file" })
 
 -- telescope mappings
 map("n", "<leader>gs", require("telescope.builtin").git_status, { desc = "Telescope git status" })
