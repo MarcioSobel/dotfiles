@@ -36,6 +36,8 @@ noremap("n", "<C-h>", "<C-w>h", { desc = "Switch window left" })
 noremap("n", "<C-l>", "<C-w>l", { desc = "Switch window right" })
 noremap("n", "<C-j>", "<C-w>j", { desc = "Switch window down" })
 noremap("n", "<C-k>", "<C-w>k", { desc = "Switch window up" })
+noremap("n", "<leader>sph", "<C-w>s", { desc = "Split window horizontally —" })
+noremap("n", "<leader>spv", "<C-w>v", { desc = "Split window vertically |" })
 
 -- file manipulation
 noremap("n", "<C-s>", "<cmd>w<CR>", { desc = "Save buffer changes to file" })
