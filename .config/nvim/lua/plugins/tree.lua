@@ -34,7 +34,9 @@ return {
 
 			local api = require("nvim-tree.api")
 			vim.keymap.set("n", "<C-n>", api.tree.open, opts("Open or Focus File Explorer"))
-			vim.keymap.set("n", "<leader>e", api.tree.toggle, opts("Toggle File Explorer"))
+			vim.keymap.set("n", "<leader>e", function()
+				api.tree.toggle({ find_file = true })
+			end, opts("Toggle File Explorer"))
 
 			local HEIGHT_RATIO = 0.7
 			local WIDTH_RATIO = 0.2
