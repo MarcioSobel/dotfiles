@@ -69,6 +69,14 @@ And done! You should be able to log in Hyprland and start using this config. Fee
 | <kbd>Super</kbd> + <kbd>→</kbd> | Focus right window |
 | <kbd>Super</kbd> + <kbd>↑</kbd> | Focus upper window |
 | <kbd>Super</kbd> + <kbd>↓</kbd> | Focus lower window |
+| <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>←</kbd> | Move window left |
+| <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>→</kbd> | Move window right |
+| <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>↑</kbd> | Move window up |
+| <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>↓</kbd> | Move window down |
+| <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>H</kbd> | Move window left |
+| <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>L</kbd> | Move window right |
+| <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>K</kbd> | Move window up |
+| <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>J</kbd> | Move window down |
 </details>
 
 <details>
@@ -101,5 +109,4 @@ And done! You should be able to log in Hyprland and start using this config. Fee
 | <kbd>Leader</kbd> + <kbd>x</kbd> | Close current buffer |
 | <kbd>Ctrl</kbd> + <kbd>s</kbd> | Save buffer |
 | <kbd>Leader</kbd> + <kbd>m</kbd> + <kbd>d</kbd> + <kbd>p</kbd> | Toggle markdown preview |
-
 </details>
