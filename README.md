@@ -110,3 +110,16 @@ And done! You should be able to log in Hyprland and start using this config. Fee
 | <kbd>Ctrl</kbd> + <kbd>s</kbd> | Save buffer |
 | <kbd>Leader</kbd> + <kbd>m</kbd> + <kbd>d</kbd> + <kbd>p</kbd> | Toggle markdown preview |
 </details>
+
+<details>
+<summary>Tmux keybindings</summary>
+
+> Note: The `prefix key` set for tmux in this config is <kbd>Ctrl</kbd> + <kbd>␣ Space</kbd> 
+
+| Keybind | Description |
+| :--- | :--- |
+| <kbd>Prefix</kbd> + <kbd>Ctrl</kbd> + <kbd>s</kbd> | Save session |
+| <kbd>Prefix</kbd> + <kbd>Ctrl</kbd> + <kbd>r</kbd> | Restore session |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>h</kbd> | Go to previous window |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>l</kbd> | Go to next window |
+</details>
