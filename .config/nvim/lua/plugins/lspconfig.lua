@@ -2,7 +2,6 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		dependencies = {
-			"ray-x/lsp_signature.nvim",
 			"williamboman/mason.nvim",
 			"williamboman/mason-lspconfig.nvim",
 		},
@@ -61,7 +60,7 @@ return {
 			}
 
 			-- servers to be used with default configs
-			local servers = { "ts_ls", "html", "cssls", "tailwindcss" }
+			local servers = { "ts_ls", "html", "cssls" }
 
 			for _, server in ipairs(servers) do
 				lsp[server].setup({
