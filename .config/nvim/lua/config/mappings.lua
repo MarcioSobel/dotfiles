@@ -57,3 +57,6 @@ end, { desc = "Git Blame line" })
 map("n", "<Tab>", "<cmd>BufferLineCycleNext<CR>", { desc = "Go to next tab" })
 map("n", "<S-Tab>", "<cmd>BufferLineCyclePrev<CR>", { desc = "Go to previous tab" })
 map("n", "<Leader>x", "<cmd>bdelete<CR>", { desc = "Close current tab" })
+
+-- markdown previewer mappings
+map("n", "<leader>mdp", "<cmd>MarkdownPreviewToggle<CR>", { desc = "Markdown Preview Toggle" })
