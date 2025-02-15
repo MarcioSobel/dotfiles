@@ -49,7 +49,6 @@ return {
 					["<C-d>"] = cmp.mapping.scroll_docs(-4),
 					["<C-u>"] = cmp.mapping.scroll_docs(4),
 					["<C-e>"] = cmp.mapping.close(),
-					["<Esc>"] = cmp.mapping.close(),
 					["<CR>"] = cmp.mapping.confirm({
 						select = true,
 						behavior = cmp.ConfirmBehavior.Insert,
@@ -73,6 +72,8 @@ return {
 					{ name = "nvim_lsp" },
 				}, {
 					{ name = "buffer" },
+				}, {
+					{ name = "nvim_lsp_signature_help" },
 				}),
 				formatting = {
 					format = function(entry, vim_item)
