@@ -6,6 +6,6 @@
   all: unset;
   font-size: 1.25rem;
   font-family: 'URW Gothic';
-  color: @white;
+  color: @base3;
   transition: 200ms;
 }

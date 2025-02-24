@@ -4,7 +4,7 @@
 }
 
 .control-center {
-  background-color: @bg;
+  background-color: @base00;
   border-radius: 10px;
   padding: 15px;
 }
@@ -21,7 +21,7 @@ trough highlight {
 
 scale trough {
   margin: 0rem 1rem;
-  background-color: @surface0;
+  background-color: @base02;
   min-height: 10px;
   border-radius: 20px;
 }
@@ -41,7 +41,7 @@ scale trough {
 }
 
 .widget-volume .text-button:hover {
-  background-color: @surface0;
+  background-color: @base02;
 }
 
 .per-app-volume>* {
@@ -52,17 +52,17 @@ scale trough {
 
 /* title */
 .widget-title button {
-  background-color: @surface0;
+  background-color: @base02;
   padding: 2px 11px 2px 9px;
   border-radius: 5px;
 }
 
 .widget-title button:hover {
-  background-color: @surface1;
+  background-color: @base03;
 }
 
 .widget-title button:active {
-  background-color: @surface0;
+  background-color: @base02;
 }
 
 /* dnd */
@@ -72,7 +72,7 @@ scale trough {
 }
 
 .widget-dnd > switch {
-  background: @surface0;
+  background: @base02;
   box-shadow: none;
   border-radius: 8px;
   padding: 2px;
@@ -87,7 +87,7 @@ scale trough {
 }
 
 .widget-dnd > switch slider {
-  background: @bg;
+  background: @base00;
   border-radius: 6.5px;
   min-width: 24px;
 }
@@ -95,8 +95,8 @@ scale trough {
 /* mpris */
 .widget-mpris {
   margin-top: 15px;
-  color: @white;
-  background: @surface0;
+  color: @base3;
+  background: @base01;
   padding: 5px 10px 0px 10px;
   margin: 5px 0px;
   border-radius: 10px;
@@ -117,23 +117,23 @@ scale trough {
 }
 
 .widget-mpris-player>*:last-child>*:hover {
-  background-color: @surface1;
+  background-color: @base03;
   border-radius: 5px;
 }
 
 /* buttons grid */
 .widget-buttons-grid>flowbox>flowboxchild>button {
-  background-color: @surface0;
+  background-color: @base02;
   padding: 8px 3.5px 8px 0px;
   border-radius: 10px;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
-  background-color: @surface1;
+  background-color: @base03;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:active {
-  background-color: @surface0;
+  background-color: @base03;
 }
 
 .widget-buttons-grid>flowbox>* {

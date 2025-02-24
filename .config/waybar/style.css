@@ -7,17 +7,17 @@ window#waybar {
 
 .modules-left {
   border-radius: 10px;
-  background-color: @bg;
+  background-color: @base01;
 }
 
 .modules-center {
   border-radius: 10px;
-  background-color: @bg;
+  background-color: @base01;
 }
 
 .modules-right {
   border-radius: 10px;
-  background-color: @bg;
+  background-color: @base01;
   padding-left: 10px;
 }
 
@@ -29,7 +29,7 @@ window#waybar {
 #language,
 #clock,
 #network {
-  color: @weak-white;
+  color: @base2;
 }
 
 #clock {
@@ -47,13 +47,13 @@ window#waybar {
 
 #tray menu {
   color: rgb(202, 211, 245);
-  background-color: @bg;
+  background-color: @base01;
   padding: 5px;
   border-radius: 10px;
 }
 
 #tray menu *:hover {
-  color: @white;
+  color: @base3;
   font-weight: bold;
   background-color: @orange;
   border-radius: 10px;
@@ -62,19 +62,19 @@ window#waybar {
 #workspaces button {
     all: unset;
     padding: 2px 8px;
-    color: @white;
+    color: @base3;
     transition: all .2s ease;
 }
 
 #workspaces button:hover {
     color: @transparent;
     border: none;
-    text-shadow: 0px 0px 1.5px @weak-white;
+    text-shadow: 0px 0px 1.5px @base2;
     transition: all 0.5s ease;
 }
 
 #workspaces button.active {
-    color: @white;
+    color: @base3;
     border: none;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }
@@ -93,12 +93,12 @@ window#waybar {
 }
 
 #workspaces button.empty.active {
-    color: @weak-white;
+    color: @base2;
     border: none;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }
 
 #custom-notification {
-  color: @white;
+  color: @base3;
   font-weight: bold;
 }

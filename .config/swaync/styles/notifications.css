@@ -33,11 +33,11 @@
 }
 
 .notification-group .horizontal .circular.image-button:hover {
-  background: @surface1;
+  background: @base03;
 }
 
 .notification-group .horizontal .circular.image-button:active {
-  background: @surface0;
+  background: @base02;
 }
 
 .notification-group-icon {
@@ -49,7 +49,7 @@
 }
 
 .notification-group {
-  background-color: @surface0;
+  background-color: @base02;
   border-radius: 10px;
 }
 
@@ -59,7 +59,7 @@
 
 .collapsed.notification-group .horizontal {
   border-radius: 10px;
-  background-color: @surface0;
+  background-color: @base02;
 }
 
 .notification-group .notification-row .body {
@@ -74,16 +74,16 @@
   margin: 7px;
   padding: 2px;
   border-radius: 5px;
-  color: @bg;
-  background-color: @surface0;
+  color: @base01;
+  background-color: @base02;
 }
 
 .notification-group .notification-row>* .close-button:hover {
-  background-color: @surface1;
+  background-color: @base03;
 }
 
 .notification-group .notification-row>* .close-button:active {
-  background-color: @surface0;
+  background-color: @base02;
 }
 
 .notification-group .notification-row>* .time {
@@ -99,7 +99,7 @@
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   margin: 10px;
-  background-color: @bg;
+  background-color: @base01;
   padding: 0;
 }
 
@@ -131,32 +131,32 @@
 
 .floating-notifications.background .notification>*:last-child>* .notification-action {
   border-radius: 6px;
-  background-color: @surface0;
+  background-color: @base02;
   margin: 10px;
 }
 
 .floating-notifications.background .notification>*:last-child>* .notification-action:hover {
-  background-color: @surface1;
+  background-color: @base03;
 }
 
 .floating-notifications.background .notification>*:last-child>* .notification-action:active {
-  background-color: @surface0;
+  background-color: @base02;
 }
 
 .floating-notifications.background .notification-background .close-button {
   margin: 7px;
   padding: 2px;
   border-radius: 5px;
-  color: @bg;
-  background-color: @surface0;
+  color: @base01;
+  background-color: @base02;
 }
 
 .floating-notifications.background .notification-background .close-button:hover {
-  background-color: @surface1;
+  background-color: @base03;
 }
 
 .floating-notifications.background .notification-background .close-button:active {
-  background-color: @surface0;
+  background-color: @base02;
 }
 
 /* critical and low notifications */
