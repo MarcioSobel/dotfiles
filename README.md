@@ -77,6 +77,8 @@ And done! You should be able to log in Hyprland and start using this config. Fee
 | <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>l</kbd> | Move window right |
 | <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>k</kbd> | Move window up |
 | <kbd>Super</kbd> + <kbd>⇧ Shift</kbd> + <kbd>j</kbd> | Move window down |
+| <kbd>Super</kbd> + <kbd>+</kbd> | Zoom + |
+| <kbd>Super</kbd> + <kbd>-</kbd> | Zoom - |
 </details>
 
 <details>
