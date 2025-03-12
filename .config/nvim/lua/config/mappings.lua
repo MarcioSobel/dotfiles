@@ -42,11 +42,16 @@ noremap("n", "<leader>spv", "<C-w>v", { desc = "Split window vertically |" })
 -- file manipulation
 noremap("n", "<C-s>", "<cmd>w<CR>", { desc = "Save buffer changes to file" })
 
+-- diagnostics
+map("n", "<leader>fd", function()
+	vim.diagnostic.open_float()
+end, { desc = "Show diagnostics" })
+
 -- telescope mappings
 map("n", "<leader>gs", require("telescope.builtin").git_status, { desc = "Telescope git status" })
 map("n", "<leader>gcb", require("telescope.builtin").git_branches, { desc = "Telescope git branches" })
 map("n", "<leader>fb", require("telescope.builtin").buffers, { desc = "Telescope buffers" })
-map("n", "<leader>fd", require("telescope.builtin").diagnostics, { desc = "Telescope LSP diagnostics" })
+map("n", "<leader>fad", require("telescope.builtin").diagnostics, { desc = "Telescope all LSP diagnostics" })
 map("n", "<C-f>", require("telescope.builtin").current_buffer_fuzzy_find, { desc = "Telescope find in current buffer" })
 map("n", "<leader>ff", function()
 	require("telescope.builtin").find_files({ follow = true })

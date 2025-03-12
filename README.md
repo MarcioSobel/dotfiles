@@ -102,7 +102,8 @@ And done! You should be able to log in Hyprland and start using this config. Fee
 | <kbd>Leader</kbd> + <kbd>f</kbd> + <kbd>f</kbd> | Find files |
 | <kbd>Leader</kbd> + <kbd>f</kbd> + <kbd>a</kbd> | Find all files (including hidden and ignored by git) |
 | <kbd>Leader</kbd> + <kbd>f</kbd> + <kbd>b</kbd> | Find buffer |
-| <kbd>Leader</kbd> + <kbd>f</kbd> + <kbd>d</kbd> | LSP Diagnostics |
+| <kbd>Leader</kbd> + <kbd>f</kbd> + <kbd>a</kbd> + <kbd>d</kbd> | Show all LSP Diagnostics |
+| <kbd>Leader</kbd> + <kbd>f</kbd> + <kbd>d</kbd> | Open LSP Diagnostics |
 | <kbd>Leader</kbd> + <kbd>g</kbd> + <kbd>b</kbd> | Git blame line |
 | <kbd>Leader</kbd> + <kbd>g</kbd> + <kbd>s</kbd> | Show git status |
 | <kbd>Leader</kbd> + <kbd>g</kbd> + <kbd>c</kbd> + <kbd>b</kbd> | Show git branches |
