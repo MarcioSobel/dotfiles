@@ -54,9 +54,14 @@ map("n", "<leader>fb", require("telescope.builtin").buffers, { desc = "Telescope
 map("n", "<leader>fad", require("telescope.builtin").diagnostics, { desc = "Telescope all LSP diagnostics" })
 map("n", "<C-f>", require("telescope.builtin").current_buffer_fuzzy_find, { desc = "Telescope find in current buffer" })
 map("n", "<leader>ff", function()
-	require("telescope.builtin").find_files({ follow = true })
+	local telescope = require("telescope.builtin")
+	local find_options = { follow = true }
+
+	if not pcall(telescope.git_files, find_options) then
+		telescope.find_files(find_options)
+	end
 end, { desc = "Telescope find files" })
-map("n", "<leader>fa", function()
+map("n", "<leader>faf", function()
 	require("telescope.builtin").find_files({ follow = true, hidden = true, no_ignore = true })
 end, { desc = "Telescope find all files" })
 

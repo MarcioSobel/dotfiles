@@ -100,7 +100,7 @@ And done! You should be able to log in Hyprland and start using this config. Fee
 | <kbd>Leader</kbd> + <kbd>s</kbd> + <kbd>p</kbd> + <kbd>v</kbd> | Split window vertically |
 | <kbd>Leader</kbd> + <kbd>s</kbd> + <kbd>p</kbd> + <kbd>h</kbd> | Split window horizontally |
 | <kbd>Leader</kbd> + <kbd>f</kbd> + <kbd>f</kbd> | Find files |
-| <kbd>Leader</kbd> + <kbd>f</kbd> + <kbd>a</kbd> | Find all files (including hidden and ignored by git) |
+| <kbd>Leader</kbd> + <kbd>f</kbd> + <kbd>a</kbd> + <kbd>f</kbd> | Find all files (including hidden and ignored by git) |
 | <kbd>Leader</kbd> + <kbd>f</kbd> + <kbd>b</kbd> | Find buffer |
 | <kbd>Leader</kbd> + <kbd>f</kbd> + <kbd>a</kbd> + <kbd>d</kbd> | Show all LSP Diagnostics |
 | <kbd>Leader</kbd> + <kbd>f</kbd> + <kbd>d</kbd> | Open LSP Diagnostics |
