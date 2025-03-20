@@ -55,10 +55,9 @@ map("n", "<leader>fad", require("telescope.builtin").diagnostics, { desc = "Tele
 map("n", "<C-f>", require("telescope.builtin").current_buffer_fuzzy_find, { desc = "Telescope find in current buffer" })
 map("n", "<leader>ff", function()
 	local telescope = require("telescope.builtin")
-	local find_options = { follow = true }
 
-	if not pcall(telescope.git_files, find_options) then
-		telescope.find_files(find_options)
+	if not pcall(telescope.git_files, { show_untracked = true }) then
+		telescope.find_files({ follow = true })
 	end
 end, { desc = "Telescope find files" })
 map("n", "<leader>faf", function()
