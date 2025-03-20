@@ -112,6 +112,7 @@ And done! You should be able to log in Hyprland and start using this config. Fee
 | <kbd>Leader</kbd> + <kbd>x</kbd> | Close current buffer |
 | <kbd>Ctrl</kbd> + <kbd>s</kbd> | Save buffer |
 | <kbd>Leader</kbd> + <kbd>m</kbd> + <kbd>d</kbd> + <kbd>p</kbd> | Toggle markdown preview |
+| <kbd>Ctrl</kbd> + <kbd>l</kbd> | Accept Copilot suggestion |
 </details>
 
 <details>

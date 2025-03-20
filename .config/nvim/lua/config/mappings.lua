@@ -82,3 +82,8 @@ noremap("n", "/", require("searchbox").incsearch, { desc = "Search" })
 noremap("n", "<C-f>", function()
 	require("searchbox").replace({ confirm = "menu" })
 end, { desc = "Search and Replace" })
+
+-- copilot mappings
+noremap("i", "<C-l>", function()
+	vim.fn.feedkeys(vim.fn["copilot#Accept"](), "")
+end, { desc = "Accept Copilot suggestion" })
