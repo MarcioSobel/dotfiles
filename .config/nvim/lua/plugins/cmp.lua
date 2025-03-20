@@ -1,10 +1,7 @@
 return {
 	{
 		"hrsh7th/nvim-cmp",
-		dependencies = {
-			"hrsh7th/cmp-nvim-lsp",
-			"hrsh7th/cmp-buffer",
-		},
+		dependencies = { "hrsh7th/cmp-nvim-lsp", "hrsh7th/cmp-buffer" },
 		config = function()
 			local kind_icons = {
 				Text = "",
@@ -70,9 +67,7 @@ return {
 				}),
 				sources = cmp.config.sources({
 					{ name = "nvim_lsp" },
-				}, {
 					{ name = "buffer" },
-				}, {
 					{ name = "nvim_lsp_signature_help" },
 				}),
 				formatting = {
