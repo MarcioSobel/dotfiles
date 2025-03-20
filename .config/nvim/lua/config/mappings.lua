@@ -76,3 +76,9 @@ map("n", "<Leader>x", "<cmd>bdelete<CR>", { desc = "Close current tab" })
 
 -- markdown previewer mappings
 map("n", "<leader>mdp", "<cmd>MarkdownPreviewToggle<CR>", { desc = "Markdown Preview Toggle" })
+
+-- searchbox mappings
+noremap("n", "/", require("searchbox").incsearch, { desc = "Search" })
+noremap("n", "<C-f>", function()
+	require("searchbox").replace({ confirm = "menu" })
+end, { desc = "Search and Replace" })
