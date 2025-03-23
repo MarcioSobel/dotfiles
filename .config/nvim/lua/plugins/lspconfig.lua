@@ -60,7 +60,7 @@ return {
 			}
 
 			-- servers to be used with default configs
-			local servers = { "ts_ls", "html", "cssls" }
+			local servers = { "ts_ls", "html", "cssls", "gopls" }
 
 			for _, server in ipairs(servers) do
 				lsp[server].setup({
