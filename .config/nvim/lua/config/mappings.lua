@@ -87,3 +87,6 @@ end, { desc = "Search and Replace" })
 noremap("i", "<C-l>", function()
 	vim.fn.feedkeys(vim.fn["copilot#Accept"](), "")
 end, { desc = "Accept Copilot suggestion" })
+
+-- toggleterm mappings
+noremap({ "n", "t" }, "<M-i>", "<cmd>ToggleTerm<CR>", { desc = "Toggle Floating Terminal", silent = true })

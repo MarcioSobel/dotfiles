@@ -113,6 +113,7 @@ And done! You should be able to log in Hyprland and start using this config. Fee
 | <kbd>Ctrl</kbd> + <kbd>s</kbd> | Save buffer |
 | <kbd>Leader</kbd> + <kbd>m</kbd> + <kbd>d</kbd> + <kbd>p</kbd> | Toggle markdown preview |
 | <kbd>Ctrl</kbd> + <kbd>l</kbd> | Accept Copilot suggestion |
+| <kbd>Alt</kbd> + <kbd>i</kbd> | Open floating terminal |
 </details>
 
 <details>
