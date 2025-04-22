@@ -12,7 +12,7 @@ return {
 				lualine_c = { "filename", { "diagnostics", separator = { left = "" } } },
 				lualine_x = {
 					function()
-						local clients = vim.lsp.get_active_clients()
+						local clients = vim.lsp.get_clients()
 
 						if not next(clients) then
 							return ""
