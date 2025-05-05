@@ -61,6 +61,10 @@ window#waybar {
   background-color: @base02;
 }
 
+#tray menuitem {
+  border: none;
+}
+
 #tray menuitem:hover {
   color: @base3;
   font-weight: bold;
