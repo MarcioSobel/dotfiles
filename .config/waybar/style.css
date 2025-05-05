@@ -50,13 +50,42 @@ window#waybar {
   background-color: @base01;
   padding: 5px;
   border-radius: 10px;
+  border: none;
 }
 
-#tray menu *:hover {
+#tray window {
+  background-color: @transparent;
+}
+
+#tray menu separator {
+  background-color: @base02;
+}
+
+#tray menuitem:hover {
   color: @base3;
   font-weight: bold;
   background-color: @orange;
   border-radius: 10px;
+  border: none;
+}
+
+#tray menuitem check {
+  border: 1.25px solid rgb(202, 211, 245);
+  transition: none;
+}
+
+#tray menuitem check:hover {
+  border: 1.25px solid @base3;
+}
+
+#tray menuitem check:checked {
+  background-color: rgb(202, 211, 245);
+  color: @base01;
+}
+
+#tray menuitem check:checked:hover {
+  background-color: @base3;
+  color: @orange;
 }
 
 #workspaces button {
